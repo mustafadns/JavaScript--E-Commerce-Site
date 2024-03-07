@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD OPTİK || Gözlük Mağazası</title>
+    
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/toastr/toastr.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="website icon" type="jpg"
+    href="image/website-icon.jpg">
+</head>
+<body>
+    <nav class="navbar">
+        <h2 class="tittle">MD OPTİK <img class="tittle_img" src="image/reklamlar/gözlük-3.png" width="100" height="100"></h2>
+        <ul class="menu">
+            <li class="active menu_li"><a href="#">ANASAYFA</a></li>
+            <li class="menu_li"><a href="#">MAĞAZALAR</a></li>
+            <li class="menu_li"><a href="#">MARKALAR</a></li>
+            <li class="menu_li"><a href="#">HAKKINDA</a></li>
+        </ul>
+        <ul class="menu_icons">
+            <li class="search_icon">
+                <input class="search_icon" type="text" placeholder="Arama Yapınız">
+            </li>
+            <li class="person_icon" onclick="toggleModalPerson()">
+                <i class="bi bi-person"></i>
+            </li>
+            <li class="heart_icons" onclick="toggleModalHeart()">
+                <i class="bi bi-heart"></i>
+                <span class="heart_counts"></span>
+            </li>
+            <li class="basket_icons" onclick="toggleModal()">
+                <i class="bi bi-bag"></i>
+                <span class="basket_count"></span>
+            </li>
+        </ul>
+    </nav>
+    <section class="slider">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image/slider'lar/slider-1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/slider'lar/slider-2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/slider'lar/slider-3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/slider'lar/slider-4.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/slider'lar/slider-5.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/slider'lar/slider-6.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/slider'lar/slider-7.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="image/slider'lar/slider-8.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <div class="information_type">
+        <a href="https://www.elitoptik.com.tr/yuz-seklinize-en-uygun-gunes-gozlugu"><img src="image/reklamlar/yuz-sekliniz-en-uygun-gunes-gozlugu-mode-b05f.jpg" alt="yüz şekline uygun gözlük modelleri"></a>
+    </div>
+    <div class="information_glasses">
+        <div class="information_tittle">
+            <h2>Çerçeve Ve Cam Tipleri</h2>
+        </div>
+        <div class="information_glass_detail">
+            <div class="information_extra">
+                <div class="information_damla">
+                    <img src="image/cam ve çerçeve/damla.webp" alt="DAMLA">
+                    <div class="information_text">
+                        <span>DAMLA</span>
+                    </div>
+                </div>
+            </div>
+            <div class="information_extra">
+                <div class="information_dikdörtgen">
+                    <img src="image/cam ve çerçeve/dikdörtgen.webp" alt="DAMLA">
+                    <div class="information_text">
+                        <span>DİKDÖRTGEN</span>
+                    </div>
+                </div>
+            </div>
+            <div class="information_extra">
+                <div class="information_geometrik">
+                    <img src="image/cam ve çerçeve/geometrik.webp" alt="DAMLA">
+                    <div class="information_text">
+                        <span>GEOMETRİK</span>
+                    </div>
+                </div>
+            </div>
+            <div class="information_extra">
+                <div class="information_oval">
+                    <img src="image/cam ve çerçeve/oval.webp" alt="DAMLA">
+                    <div class="information_text">
+                        <span>OVAL</span>
+                    </div>
+                </div>
+            </div>
+            <div class="information_extra">
+                <div class="information_yuvarlak">
+                    <img src="image/cam ve çerçeve/yuvarlak.webp" alt="DAMLA">
+                    <div class="information_text">
+                        <span>YUVARLAK</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section_options">
+        <div class="section_woman">
+            <a href="#"><img src="image/kategori/kadin-gunes-gozlukleri.jpg"></a>
+        </div>
+        <div class="section_man">
+            <a href="#"><img src="image/kategori/erkek-gunes-gozlukleri.jpg"></a>
+        </div>
+        <div class="section_children">
+            <a href="#"><img src="image/kategori/cocuk-gunes-gozlukleri.jpg"></a>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container_tittle">
+            <span>Trend Gözkükler</span>
+        </div>
+        <div class="glasseslist">
+            <!-- Bu Kısımda Trend gözlüklerin Listesi Bulunmaktadır 
+            Ancak Dinamik Hale Getirilip JavaScript Kısmına Atılmıştır!!! -->
+        </div>
+    </div>
+        <div class="information_mainpage">
+            <div class="information_icons">
+                <div class="information_icon">
+                    <img src="image/ektra kısmı/ömür boyu ücretsiz bakım.png">
+                </div>
+                <div class="information_maintext">
+                    <span class="information_maintittle">Ömür Boyu Ücretsiz Bakım</span>
+                    <span class="information_maintext">Güneş gözlüklerinin plaket, sap, vida ayarı ve vida değişimi.</span>
+                </div>
+            </div>
+            <div class="information_icons">
+                <div class="information_icon">
+                    <img src="image/ektra kısmı/mutlu müşteri.png">
+                </div>
+                <div class="information_maintext">
+                    <span class="information_maintittle">%100 Mutlu Müşteri</span>
+                    <span class="information_maintext">Güler yüzlü, ilgili, deneyimli ekibimiz ve canlı destek hizmeti ile özel bir deneyim.</span>
+                </div>
+            </div>
+            <div class="information_icons">
+                <div class="information_icon">
+                    <img src="image/ektra kısmı/kalite  güvencesi.png">
+                </div>
+                <div class="information_maintext">
+                    <span class="information_maintittle">Kalite Güvencesi</span>
+                    <span class="information_maintext">Güneş gözlükleriniz 2 yıl garantili</span>
+                </div>
+            </div>
+            <div class="information_icons">
+                <div class="information_icon">
+                    <img src="image/ektra kısmı/ultrasonik özel temizlik.png">
+                </div>
+                <div class="information_maintext">
+                    <span class="information_maintittle">Ultrasonik Özel Temizlik</span>
+                    <span class="information_maintext">MD Optik'ten alınmamış olsa dahi istediğiniz zaman tüm noktalarımızdan ücretsiz temizlik.</span>
+                </div>
+            </div>
+            <div class="information_icons">
+                <div class="information_icon">
+                    <img src="image/ektra kısmı/şeffaf fiyatlandırma.png">
+                </div>
+                <div class="information_maintext">
+                    <span class="information_maintittle">Şeffaf Fiyatlandırma</span>
+                    <span class="information_maintext">Türkiye'nin her yerinde şeffaf fiyatlandırma standardı.</span>
+                </div>
+            </div>
+        </div>
+        <hr class="çizgi" size="5">
+        <div class="footer">
+            <div class="footer_main">
+                    <div class="footers_tittle">MD OPTİK <img class="footer_tittleimg" src="image/reklamlar/gözlük-3.png" width="100" height="100"></div>
+                    <div class="social_media">
+                        <li class="instagram"><a href="#"><i class="bi bi-instagram"></i></a></li>
+                        <li class="facebook"><a href="#"><i class="bi bi-facebook"></i></a></li>
+                        <li class="twitter"><a href="#"><i class="bi bi-twitter"></i></a></li>
+                        <li class="whatsapp"><a href="#"><i class="bi bi-whatsapp"></i></a></li>
+                    </div>
+                    <div class="maps">
+                        <img src="image/reklamlar/harita.png" width="200"></a>
+                    </div>
+            </div>
+            <div class="footers_otherOptions">
+                <div class="optionsOne">
+                    <div class="optionsOne_tittle">
+                        <span>MD Kurumsal</span>
+                    </div>
+                    <div class="optionsOne_text">
+                        <li class="text_one">
+                            <a href="#" target="_blank">Hakkında</a>
+                        </li>
+                        <li class="text_two">
+                            <a href="#" target="_blank">Bilgi Toplumu Hizmetleri</a>
+                        </li>
+                        <li class="text_three">
+                            <a href="#" target="_blank">Gizlilik Ve Çerez Politikası</a>
+                        </li>
+                        <li class="text_four">
+                            <a href="#" target="_blank">İşlem Rehberi</a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <div class="footers_otherOptionsA">
+                <div class="footer_customer">
+                    <div class="footer_customerTittle">
+                        <span>Müşteri Hizmetleri</span>
+                    </div>
+                    <div class="optionsOne_text">
+                        <li>
+                            <a href="#" target="_blank">Çerçeve Rehberi</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">mdoptik@gmail.com</a><br>
+                            <a href="#" target="_blank">+90 xxx xxx xxxx</a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <div class="footers_otherOptionsAA">
+                <div class="footers_kategories">
+                    <div class="kategories_tittle">
+                        <span>Kategoriler</span>
+                    </div>
+                    <div class="kategories_text">
+                        <li>
+                            <a href="#" target="_blank">Alexander Mcqueen</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">Armani Exchange</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">Burberry</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">Bvlgarı</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">Calvin Kleın</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">Dolce&Gabbana</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">Emperio Armani</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">Etnia Barcelona</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">Giorgia Armani</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">Gucci</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">Guess</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">Guess By Marciano</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">Mcqueen</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">Mustang</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">Prada</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">Ray-Ban</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">Versage</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">Vogue</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">Vycoz</a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="basket_modal">
+            <div class="basket_items">
+                    <i class="bi bi-x" onclick="toggleModal()"></i>
+                    <h2 class="basket_tittle">ÜRÜN LİSTESİ</h2>
+                <ul class="basket_list">
+                <li class="empty_heart">Sepetiniz Boş Lütfen Ürün Ekleyiniz</li>
+                </ul>
+                <div class="basket_total">
+                    <span class="btn_total"></span>
+                    <div class="btn_btn">
+                <button class="btn_total_confirmation">SEPETİ ONAYLA</button>
+                <button class="btn_total_delete" onclick="removeItemToBasketAll()">SEPETİ SİL</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="heart_modal">
+            <div class="heart_items">
+                    <i class="heart_x bi bi-x" onclick="toggleModalHeart()"></i>
+                    <h2 class="heart_tittle">BEĞENİLEN ÜRÜNLER</h2>
+                <ul class="heart_list">
+                    <li class="empty_heart">Beğenilen Ürün Bulunamadı <br>Lütfen Ürün Beğeniniz</li>
+                </ul>
+            </div>
+        </div>
+        <div class="person_modal">
+            <div class="person_item">
+                <i class="person_x bi bi-x" onclick="toggleModalPerson()"></i>
+                <div class="card login">
+                <h2 class="person_tittle1">GİRİŞ YAP</h2>
+                <div class="loginInput">
+                    <input class="person_login" type="email" placeholder="E-mail'inizi Giriniz...">
+                    <i class=" person_login_e  bi bi-envelope"></i>
+                    <input class="person_login" type="password" placeholder="Şifrenizi Giriniz...">
+                    <i class=" person_login_e bi bi-lock"></i>
+                </div>
+                <button class="LoginButton">GİRİŞ YAP</button> <br>
+                <a href="#" class="info_login">Şifremi Unuttum</a>
+            </div>
+            <div class="card addAccount">
+                <h2 class="person_tittle2">HESAP EKLE</h2>
+                <div class="addAccountİnput">
+                <div class="person_name_lastname">
+                    <input class="person_input_name" type="text" placeholder="Adınızı Giriniz...">
+                    <i class=" person_icon_name bi bi-person"></i>
+                    <input class="person_input_lastname" type="text" placeholder="Soyadınızı Giriniz...">
+                    <i class=" person_icon_lastname bi bi-person"></i>
+                </div>
+                <div class="person_icon_icon">
+                    <input class="person_input" type="text" placeholder="E-mail'inizi Giriniz...">
+                    <i class=" person_iconA bi bi-envelope"></i>
+                    <input class="person_input" type="password" placeholder="Şifre Giriniz...">
+                    <i class=" person_iconA bi bi-lock"></i>
+                    <input class="person_input" type="tel" placeholder="+90">
+                    <i class=" person_iconA bi bi-phone"></i>
+                </div>
+                    <button class="addAccountButton">ÜYE OL</button>
+                    <div class="person_info">
+                        <input class="info1" type="checkbox">Kampanya, duyuru, bilgilendirmelerden e-posta ile haberdar olmak istiyorum. <br>
+                        <input class="info1" type="checkbox">Kampanya, duyuru, bilgilendirmelerden sms ile haberdar <br> olmak istiyorum. <br>
+                        <input class="info1" type="checkbox"><a class="info_import" href="#">Üyelik koşullarını</a> ve <a class="info_import" href="#">kişisel verilerimin korunmasını</a> kabul ediyorum. <br>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    <script
+        type="text/javascript"
+        src="assets/bootstrap/js/bootstrap.min.js">
+    </script>      
+        <script src="./assets/jquery/jquery.min.js"></script>
+        <script src="./assets/toastr/toastr.min.js"></script>
+        <script type="text/javascript" src="app.js"></script>
+</body>
+</html>

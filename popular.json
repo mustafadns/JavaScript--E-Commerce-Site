@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "name": "Calvin Klein",
+        "author": "CKNYC 1882S 742 Kadın Güneş Gözlüğü",
+        "price": 5056,
+        "oldPrice": 10112,
+        "stock": 4,
+        "imgSource": "image/gözlükler/Calvın kleın/calvin-klein-1.jpg",
+        "type": "OVAL",
+        "typeSrc": "image/cam ve çerçeve/oval.webp",
+        "gender" : "Kadın"
+    },
+    {
+        "id": 2,
+        "name": "Calvin Klein",
+        "author": "CK19523S-601 Güneş Gözlüğü",
+        "price": 3013,
+        "oldPrice": 7112,
+        "stock": 4,
+        "imgSource": "image/gözlükler/Calvın kleın/calvin-klein-2.jpg",
+        "type": "OVAL",
+        "typeSrc": "image/cam ve çerçeve/oval.webp",
+        "gender" : "Unisex"
+    },
+    {
+        "id": 3,
+        "name": "Calvin Klein",
+        "author": "CKNYC 1851 001 Erkek Güneş Gözlüğü",
+        "price": 4779,
+        "oldPrice": 9557,
+        "stock": 4,
+        "imgSource": "image/gözlükler/Calvın kleın/calvin-klein-3.jpg",
+        "type": "OVAL",
+        "typeSrc": "image/cam ve çerçeve/oval.webp",
+        "gender" : "Erkek"
+    },
+    {
+        "id": 4,
+        "name": "Calvin Klein",
+        "author": "1878S 001 Erkek Güneş Gözlüğü",
+        "price": 5056,
+        "oldPrice": 7892,
+        "stock": 4,
+        "imgSource": "image/gözlükler/Calvın kleın/calvin-klein-4.jpg",
+        "type": "OVAL",
+        "typeSrc": "image/cam ve çerçeve/oval.webp",
+        "gender" : "Erkek"
+    },
+    {
+        "id": 5,
+        "name": "Calvin Klein",
+        "author": "CKNYC 1850S 450 Erkek Güneş Gözlüğü",
+        "price": 4779,
+        "oldPrice": 9549,
+        "stock": 4,
+        "imgSource": "image/gözlükler/Calvın kleın/calvin-klein-5.jpg",
+        "type": "OVAL",
+        "typeSrc": "image/cam ve çerçeve/oval.webp",
+        "gender" : "Erkek"
+    },
+    {
+        "id": 6,
+        "name": "Calvin Klein",
+        "author": "CKNYC1878S 244 Unisex Güneş Gözlüğü",
+        "price": 5056,
+        "oldPrice": 9238,
+        "stock": 4,
+        "imgSource": "image/gözlükler/Calvın kleın/calvin-klein-6.jpg",
+        "type": "OVAL",
+        "typeSrc": "image/cam ve çerçeve/oval.webp",
+        "gender" : "Unisex"
+    },
+    {
+        "id": 7,
+        "name": "Calvin Klein",
+        "author": "CKNYC1874S 001 Erkek Güneş Gözlüğü",
+        "price": 5271,
+        "oldPrice": 8546,
+        "stock": 4,
+        "imgSource": "image/gözlükler/Calvın kleın/calvin-klein-7.jpg",
+        "type": "OVAL",
+        "typeSrc": "image/cam ve çerçeve/oval.webp",
+        "gender" : "Erkek"
+    },
+    {
+        "id": 8,
+        "name": "Calvin Klein",
+        "author": "CK18537S-001 56 Erkek Güneş Gözlüğü",
+        "price": 3135,
+        "oldPrice": 6271,
+        "stock": 4,
+        "imgSource": "image/gözlükler/Calvın kleın/calvin-klein-8.jpg",
+        "type": "OVAL",
+        "typeSrc": "image/cam ve çerçeve/oval.webp",
+        "gender" : "Erkek"
+    }
+]
